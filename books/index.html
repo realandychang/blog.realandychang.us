@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <!--Favicon-->
 <link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="32x32" />
 <link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="192x192" />
@@ -69,13 +69,12 @@ body {
   <a href="/books">Books</a>
   <a href="mailto:andyc@realandychang.us">Contact</a>
   <a href="/maps">Location</a>
-  <a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/">School</a>
+  <a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/" target="_blank">School</a>
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Blog</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <a style=" text-decoration:none" href="https://blog.realandychang.us"><span style=color:black>Blog</a></span>
 </div>
-
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -87,11 +86,62 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-  <center><h1>Welcome to Books Record!</h1></center>
-<center><p><a href="https://www.amazon.com/Flipped-Wendelin-Van-Draanen/dp/0375825444">
-<img src="/Flipped PIC.jpg" alt="Book Flipped" width="150" height="150">
-  </a>COMPLETED</p></center>
 
-<center><p><a href="https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341/">
-<img src="/Animal Farm PIC.jpg" alt="Book Animal Farm" width="150" height="150">
-  </a>COMPLETED</p></center>
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 5px outset green;
+  background-color: pink;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+<style>
+.img-with-text {
+    text-align: justify;
+    width: [width of img];
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+  </style>
+  
+ <center><h1>Welcome to Books Record!</h1></center>
+<center>
+<a href="https://www.amazon.com/Flipped-Wendelin-Van-Draanen/dp/0375825444">
+<img src="https://blog.realandychang.us/Flipped PIC.jpg" alt="Book Flipped" width="200" height="240">
+  </a><font color="green"><p>COMPLETED</p></center>
+
+<center>
+<a href="https://www.amazon.com/Animal-Farm-George-Orwell/dp/0451526341">
+<img src="https://blog.realandychang.us/Animal Farm PIC.jpg" alt="Book Flipped" width="200" height="240">
+  </a><font color="green"><p>COMPLETED</p></center>
+  
+  <style>
+body {
+  background-color: #A7B4B6;
+}
+</style>
+  
+<div class="footer">
+  <h3>Copyright © 2021 Andy Chang</h3>
+  <div class="text" style=" text-align:center; "><font style="font-size:15px"><a style= " text-decoration:none; " href="https://realandychang.us/privacy-policy" target="_blank"><span style="color:#FFFFFF">Privacy Policy</span></a></p>
+</div>
+
+
+ <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #7ED0DD;
+   color: white;
+   text-align: center;
+}
