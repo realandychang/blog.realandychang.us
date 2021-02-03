@@ -20,80 +20,42 @@
 <meta property="twitter:title" content="blog.realandychang.us" />
 <script type="application/ld+json">
 {"url":"https://blog.realandychang.us/","@type":"WebSite","headline":"Andy Chang Blog","name":"Andy Chang Blog, waiting for your to join!","@context":"https://schema.org"}</script>  
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .img {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="/books">Books</a>
-  <a href="mailto:andyc@realandychang.us">Contact</a>
-  <a href="/maps">Location</a>
-  <a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/" target="_blank">School</a>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Andy Chang Blog</h1>
+  <p>Place to SHARE everything!</p> 
 </div>
 
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <a style=" text-decoration:none" href="https://blog.realandychang.us"><span style=color:black>Blog</a></span>
-</div>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://blog.realandychang.us/">Andy Chang Blog</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="https://blog.realandychang.us/">Home</a></li>
+        <li><a href="/books/">Books</a></li>
+        <li><a href="mailto:andyc@realandychang.us">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <!--Blog CSS-->
 <style>
 .center {
