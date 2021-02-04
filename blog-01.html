@@ -17,6 +17,95 @@
 <center><h3>     Hello, welcome to my blog! Today our blog is launching and to me, there are few things I want to talk about in this blog article. The first one is that currently, the blog website is just using normal background color not the background image, I think I can make more improvements to it. The second is that I don't know how to make a web port that is for my website, a web port for me is like some sort of place where people can communicate online freely. If you want to help me with this program please message me on <a style= " text-decoration:none; " href="https://twitter.com/realandychang" target="_blank" ><span style="color: #0083FF">Twitter</span></a>.</h3></center>
 <center><h3>     Now let me introduce you to my blog system, On the home page you can look at all of the blogs I posted(P.S. This is not made with a system or server. All scripted by myself), Also I made a RETURN button where people can return to the blog homepage. Currently, no menu or search feature is available. Also, I am planning to make a monthly archive and list out all the blog I made each month. If it works successfully, then it will be out on Jan 31, 2021.</h3></center>     
 <center><h3>--The End--</h3></center>
+<center><style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Copy Link</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>rv5b01.andyurl.top -Highlight and paste this to social media site!</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  </center>
 <center><button class="button button2" onclick="location.href = 'https://blog.realandychang.us' ">RETURN</button></center>
   
 <!--CSS and Footer-->
