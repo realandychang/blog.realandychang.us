@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<title>404 Error -Andy Chang
 <link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="32x32" />
 <link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://realandychang.us/img/andypfp.png" />
@@ -12,52 +12,128 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" >
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700%7CMaven+Pro:400,700,400&amp;subset=greek,cyrillic-ext,latin-ext,cyrillic,latin,vietnamese,greek-ext" rel="stylesheet">
       
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {background-color: #008CBA;} /* Green */
-.button2 {background-color: #008CBA;} /* Blue */
-</style>
-</head>
-<body>
-
-<center><h1>404 Not Found</h1></center>
-<center><p>This page is deleted or not exist.</a></p></center>
-
-<center><button class="button button1" onclick="location.href = 'https://blog.realandychang.us'">Return to Homepage</button>
-<button class="button button2" onclick="location.href = 'https://realandychang.us' ">Andy Chang's Website</button>
-    
-<style>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: #00E8FF;
-   color: white;
-   text-align: center;
-}
-</style>
-    
-<style>
-body {
-  background-color: pink;
-}
-</style>
-    
-<div class="footer">
-  <h3>Copyright © 2021 Andy Chang</h3>
-  <div class="text" style=" text-align:center; "><font style="font-size:15px"><a style= " text-decoration:none; " href="https://realandychang.us/privacy-policy" target="_blank"><span style="color:#FFFFFF">Privacy Policy</span></a></p>
+<div>
+  <aside><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/Mirror.png" alt="404" />
+  </aside>
+  <main>
+    <h1>Sorry!</h1>
+    <p>
+      This page does not exist or the content has been removed.
+    </p>
+    <button>You can go now!</button>
+  </main>
 </div>
 
-</body>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto:wght@500&display=swap");
+
+$lime: #c5dc50;
+$rasp: #f36a6f;
+$seed: #383838;
+$sm: 1rem;
+$md: 2.5rem;
+$lg: 4rem;
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/cursors-edge.png"),
+    auto;
+}
+
+body {
+  background: linear-gradient(to right, white 50%, $seed 50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: white;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  max-width: 1000px;
+  width: calc(100% - #{$lg});
+  margin: 0 auto;
+  > * {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 500px;
+    width: 100%;
+    padding: $md;
+  }
+}
+
+aside {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/right-edges.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 25px 100%;
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+main {
+  text-align: center;
+  h1 {
+    font-family: "Fontdiner Swanky", cursive;
+    font-size: $lg;
+    color: $lime;
+    margin-bottom: $sm;
+  }
+  p {
+    margin-bottom: $md;
+    em {
+      font-style: italic;
+      color: $lime;
+    }
+  }
+  button {
+    font-family: "Fontdiner Swanky", cursive;
+    font-size: $sm;
+    color: $seed;
+    border: none;
+    background-color: $rasp;
+    padding: $sm $md;
+    transform: skew(-5deg);
+    transition: all 0.1s ease;
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/cursors-eye.png"),
+      auto;
+    &:hover {
+      background-color: $lime;
+      transform: scale(1.15);
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background: $seed;
+    font-size: 16px;
+  }
+  div {
+    flex-flow: column;
+    > * {
+      max-width: 700px;
+      height: 100%;
+    }
+  }
+  aside {
+    background-image: none;
+    background-color: white;
+    img {
+      max-width: 300px;
+    }
+  }
+}
+    </style>
+    </html>
