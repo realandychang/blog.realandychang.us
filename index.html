@@ -1,50 +1,94 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <html>
-<title>Home -Andy Chang Blog</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/realandychang/realandychang.us@main/css/andyus/v1.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/realandychang/realandychang.us@main/css/andyus/v1-extra.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-<meta name="description" itemprop="description" content="Andy Chang's website homepage!" />
-<link rel="icon" href="/img/logo-trans.png" sizes="32x32" />
-<link rel="icon" href="/img/logo-trans.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="/img/logo-trans.png" />
-<meta name="msapplication-TileImage" content="/img/logo-trans.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--Favicon-->
+<link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="32x32" />
+<link rel="icon" href="https://realandychang.us/img/andypfp.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://realandychang.us/img/andypfp.png" />
+<meta name="msapplication-TileImage" content="https://realandychang.us/img/andypfp.png" /> 
+<!--SEO and Title-->
+<meta name="description" content="Andy Chang Blog Homepage">
+<title>Andy Chang Blog</title>
+<meta name="keywords" content="Andy Chang, Andy, Chang, United States Blog, Blog, Texas, California, Andy Chang's Blog, Andy Chang United States, Andy Chang US, Blog, Program, Daily Life, Sharing Platform">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Home -Andy Chang Blog">
-<meta name="twitter:description" content="Andy Chang Blog">
-<meta name="twitter:image" content="https://realandychang.us/img/logo.png"> 
- 
-<!--Return to top redirect-->
-<body id="head">
+<meta name="twitter:title" content="Andy Chang Blog">
+<meta name="twitter:description" content="Welcome to Andy Chang Blog! Everything could be shared, daily life to the book review. Visit our webpage and see more!">
+<meta name="twitter:image" content="https://realandychang.us/andypfp.png">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-<!--Return to top smooth-->
- <style>
-html {
-  scroll-behavior: smooth;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #000;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
+</head>
+<body>
 
-<!-- Navbar -->
-<div class="ac-top">
- <div class="ac-bar ac-theme-d2">
-  <a class="ac-bar-item ac-button ac-hide-medium ac-hide-large ac-left ac-hover-white ac-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="https://realandychang.us/" class="ac-bar-item" target="_self" style="text-decoration:none">A</a>
-  <a href="https://realandychang.us/about/" target="_self" class="ac-bar-item ac-button ac-hide-small ac-hover-white">About</a>
-  <a href="https://realandychang.us/membership/" target="_self" class="ac-bar-item ac-button ac-hide-small ac-hover-white">Membership</a>
-  <a href="https://blog.realandychang.us" target="_blank" class="ac-bar-item ac-button ac-hide-small ac-hover-white">Blog</a>
-  <a href="mailto:andyc@realandychang.us" class="ac-bar-item ac-button ac-hide-small ac-hover-white">Contact</a>
-  <div class="ac-dropdown-hover ac-right">
-
-  <!-- Mobile + Minimized Browser -->
-  <div id="navDemo" class="ac-bar-block ac-theme-d2 ac-hide ac-hide-large ac-hide-medium">
-    <a href="https://realandychang.us/about/" target="_blank" class="ac-bar-item ac-button">About</a>
-    <a href="https://realandychang.us/memberhsip/" target="_blank" class="ac-bar-item ac-button">Membership</a>
-    <a href="https://blog.realandychang.us" target="_blank" class="ac-bar-item ac-button">Blog</a>
-    <a href="mailto:andyc@realandychang.us" target="_blank" class="ac-bar-item ac-button">Contact</a>
-  </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/books">Books</a>
+  <a href="mailto:andyc@realandychang.us">Contact</a>
+  <a href="/maps">Location</a>
+  <a href="https://www.nordangliaeducation.com/our-schools/houston/village-school/" target="_blank">School</a>
 </div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <a style=" text-decoration:none" href="https://blog.realandychang.us"><span style=color:#000>Blog</a></span>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 <!--Blog CSS-->
 <style>
 .center {
